@@ -111,3 +111,35 @@ main {
 
 
 /* FOOTER */
+footer {
+	position: absolute;
+	bottom: 0;
+	min-width: 100%;
+	padding: 1vh 0;
+	background-color: #FFE8E5;
+}
+
+.more-link {
+	color: black;
+}
+
+.more-link:active {
+	color: orange !important;
+}
+
+.more-link:hover {
+	color: brown;
+}
+
+#copyright {
+	display: block;
+}
+
+#more {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+	padding-top: 1vh;
+	font-size: 1.2em;
+}
