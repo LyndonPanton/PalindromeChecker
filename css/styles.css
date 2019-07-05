@@ -55,7 +55,58 @@ header {
 
 
 /* MAIN */
+input {
+	display: block;
+	margin: 0 auto 3vh;
+}
 
+main {
+	padding-top: 10vh;
+}
+
+.display {
+	margin: 5vh 20vw;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	padding: 2vh 1vw;
+}
+
+#form-string {
+	border: none;
+	border-bottom: 1px black solid;
+	background-color: transparent;
+	text-align: center;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	font-size: 1em;
+}
+
+#form-string:focus::placeholder {
+	color: black;
+}
+
+#form-submit {
+	border: 2px gold solid;
+	border-radius: 5px;
+	padding: 1vh 4vw;
+	background-color: indianred;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	font-size: 1em;
+	color: white;
+}
+
+#form-submit:active {
+	border-color: khaki;
+	background-color: red;
+}
+
+#result {
+	border-color: chocolate;
+}
+
+#string {
+	border-color: crimson;
+}
 
 
 
