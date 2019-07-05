@@ -5,18 +5,23 @@ window.onload = function(event) {
 
 	function checker(string) {
 		if (string === "") {
-			return "???";
+			display("???", "String must not be empty");
 		} else if (!(/[a-zA-Z0-9]/.test(string))) {
-			return "String must contain one alphanumeric character";
+			display("???", "String must contain one alphanumeric character");
 		} else {
 			let newString = string.replace(/[^a-zA-Z0-9]/gi, "").toLowerCase();
 
-			if (newString === newString.split(" ").reverse().join("")) {
-				return true;
+			if (newString === newString.split("").reverse().join("")) {
+				display(newString, "true");
 			} else {
-				return false;
+				display(newString, "false");
 			}
 		}
+	}
+
+	function display(string, check) {
+		document.getElementById("string-value").textContent = string;
+		document.getElementById("result-value").textContent = check;
 	}
 
 	function toggle(chevron) {
