@@ -10,3 +10,7 @@
 > 1. Enter a string which contains at least one alphanumeric character into the input field
 > 2. Press the _Check_ button
 > 3. The application will display the editted string and whether the editted string is a palindrome
+
+## Requirements
+> 1. This application requires a browser to run
+> 2. The browser must have JavaScript available and enabled
