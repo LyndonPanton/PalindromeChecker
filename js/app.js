@@ -7,7 +7,7 @@ window.onload = function(event) {
 		if (string === "") {
 			display("???", "String must not be empty");
 		} else if (!(/[a-zA-Z0-9]/.test(string))) {
-			display("???", "String must contain one alphanumeric character");
+			display("???", "String must contain at least one alphanumeric character");
 		} else {
 			let newString = string.replace(/[^a-zA-Z0-9]/gi, "").toLowerCase();
 
